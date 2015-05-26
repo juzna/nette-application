@@ -59,6 +59,18 @@ abstract class Control extends PresenterComponent implements IRenderable
 	}
 
 
+	public function hasTemplate()
+	{
+		return $this->template !== NULL;
+	}
+
+
+	public function setTemplate(ITemplate $template)
+	{
+		$this->template = $template;
+	}
+
+
 	/**
 	 * @return ITemplate
 	 */
